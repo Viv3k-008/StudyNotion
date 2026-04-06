@@ -1,0 +1,17 @@
+{
+  "name": "81majorproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -n \"BACKEND,FRONTEND\" -c \"bgYellow.bold,bgBlue.bold\" \"npm run server\" \"npm run client\"",
+    "server": "npm start --prefix Server",
+    "client": "npm run dev --prefix Frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
